@@ -1,5 +1,6 @@
 <?php
 namespace OCFram;
+
 class HTTPRequest{
     public function cookieData($key){
         return isset($_COOKIE[$key]) ? $_COOKIE[$key] : null;
