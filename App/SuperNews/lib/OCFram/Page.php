@@ -14,6 +14,9 @@ class Page extends ApplicationComponent{
         if(!file_exists($this->contentFile)){
             throw new \RuntimeArgumentException('la vue spécifié n\'existe pas');
         }
+
+        $user = $this->app->user();
+
         extract($this->vars);
 
         ob_start();
